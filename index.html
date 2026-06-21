@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página educativa sobre las bacterias Cocos: microorganismos esféricos de gran importancia en microbiología. Clasificación, características, enfermedades y prevención.">
+    <meta name="keywords" content="bacterias cocos, microbiología, diplococos, estreptococos, estafilococos, bacterias esféricas, microorganismos">
+    <meta name="author" content="Proyecto Educativo de Microbiología">
+    <title>Bacterias Cocos — Microorganismos Esféricos de Gran Importancia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVEGACIÓN ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="nav-logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="assets/logo.png" alt="Logo Institución" style="height: 35px; border-radius: 4px; object-fit: contain;" onerror="this.style.display='none'">
+                <span class="nav-logo-icon">🦠</span>
+                <span class="nav-logo-text">Grupo Cocos</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#que-son" class="nav-link">¿Qué son?</a></li>
+                <li><a href="#caracteristicas" class="nav-link">Características</a></li>
+                <li><a href="#enfermedades" class="nav-link">Enfermedades</a></li>
+                <li><a href="#prevencion" class="nav-link">Prevención</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#curiosidades" class="nav-link">Curiosidades</a></li>
+                <li><a href="#bibliografia" class="nav-link">Bibliografía</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container hero-container">
+            <div class="hero-content animate-on-scroll">
+                <span class="hero-tag">🔬 Grupo Cocos</span>
+                <p style="margin-top: 10px; margin-bottom: 20px; font-weight: 500; font-size: 1.1rem; opacity: 0.9; color: var(--accent-teal);">
+                    Integrantes: Franco Escalante, Santiago Gonzalez, Mateo Zamudio y Benja Calabro
+                </p>
+                <h1 class="hero-title">Bacterias Cocos: <span class="gradient-text">Microorganismos Esféricos</span> de Gran Importancia</h1>
+                <p class="hero-subtitle">Descubre el fascinante mundo de las bacterias de forma esférica, su clasificación, características biológicas, las enfermedades que pueden causar y cómo prevenirlas. Una guía educativa completa sobre estos microorganismos fundamentales en la microbiología.</p>
+                <a href="#que-son" class="hero-btn">
+                    Explorar Información
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+            <div class="hero-image animate-on-scroll delay-2">
+                <img src="img/hero_bacteria.png" alt="Ilustración científica de bacterias cocos en diferentes agrupaciones" loading="eager">
+                <div class="hero-image-glow"></div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Desliza hacia abajo</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ========== ¿QUÉ SON LOS COCOS? ========== -->
+    <section class="section" id="que-son">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">📖 Definición</span>
+                <h2 class="section-title">¿Qué son los Cocos?</h2>
+                <p class="section-description">Los cocos son un tipo de bacteria que se caracteriza por su forma esférica u ovalada. Son uno de los grupos bacterianos más estudiados y de mayor importancia clínica en el mundo de la microbiología.</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card animate-on-scroll">
+                    <div class="card-icon">🔵</div>
+                    <h3 class="card-title">Definición</h3>
+                    <p class="card-text">Los cocos (del griego <em>kokkos</em>, que significa "grano" o "baya") son bacterias que presentan una morfología esférica o redondeada. Esta forma se mantiene constante y es una de las tres formas básicas de las bacterias, junto con los bacilos (bastones) y los espirilos (espirales).</p>
+                </div>
+                <div class="info-card animate-on-scroll delay-1">
+                    <div class="card-icon">📏</div>
+                    <h3 class="card-title">Tamaño</h3>
+                    <p class="card-text">Los cocos tienen un diámetro aproximado de 0,5 a 1,5 micrómetros (μm). Son tan pequeños que solo pueden observarse a través de un microscopio óptico o electrónico. Millones de ellos cabrían en la punta de un alfiler.</p>
+                </div>
+                <div class="info-card animate-on-scroll delay-2">
+                    <div class="card-icon">🌍</div>
+                    <h3 class="card-title">Hábitat</h3>
+                    <p class="card-text">Se encuentran prácticamente en todos los ambientes: suelo, agua, aire, superficies, alimentos y en organismos vivos. Forman parte de la microbiota normal de la piel, boca, intestinos y tracto respiratorio de los seres humanos.</p>
+                </div>
+                <div class="info-card animate-on-scroll delay-3">
+                    <div class="card-icon">⚗️</div>
+                    <h3 class="card-title">Importancia</h3>
+                    <p class="card-text">Los cocos son de enorme importancia en medicina, biotecnología e industria alimentaria. Algunos son patógenos que causan infecciones graves, mientras que otros son beneficiosos y se utilizan en la producción de alimentos fermentados como el yogur.</p>
+                </div>
+            </div>
+            <div class="info-highlight animate-on-scroll">
+                <div class="highlight-content">
+                    <h3>¿Sabías que...?</h3>
+                    <p>La forma esférica de los cocos les confiere una mayor resistencia a la desecación en comparación con otras formas bacterianas. Esto se debe a que la esfera es la forma geométrica con la menor relación superficie-volumen, lo que reduce la pérdida de agua.</p>
+                </div>
+                <div class="highlight-icon">💡</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CARACTERÍSTICAS BIOLÓGICAS ========== -->
+    <section class="section" id="caracteristicas">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">🧬 Biología</span>
+                <h2 class="section-title">Características Biológicas</h2>
+                <p class="section-description">Los cocos poseen una serie de características biológicas que los hacen únicos. Conocer su estructura y funcionamiento es fundamental para comprender cómo causan enfermedades y cómo combatirlos.</p>
+            </div>
+            <div class="features-showcase">
+                <div class="features-image animate-on-scroll">
+                    <img src="img/cell_structure.png" alt="Estructura celular detallada de una bacteria coco" loading="lazy">
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">🏗️</div>
+                        <h3 class="feature-title">Estructura Celular</h3>
+                        <p class="feature-text">Los cocos son células procariotas que carecen de núcleo definido. Poseen membrana plasmática, citoplasma con ribosomas 70S, un nucleoide con ADN circular y, en muchos casos, plásmidos que pueden conferir resistencia a antibióticos. Algunos poseen cápsula, un revestimiento externo que los protege del sistema inmunitario.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll delay-1">
+                        <div class="feature-icon">🧱</div>
+                        <h3 class="feature-title">Pared Celular</h3>
+                        <p class="feature-text">La pared celular está compuesta principalmente de peptidoglucano (mureína). Según la tinción de Gram, los cocos se dividen en Gram positivos (pared gruesa, color violeta) y Gram negativos (pared delgada con membrana externa, color rosado). Esta diferencia es crucial para el tratamiento antibiótico.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll delay-2">
+                        <div class="feature-icon">🔄</div>
+                        <h3 class="feature-title">Fisión Binaria</h3>
+                        <p class="feature-text">Los cocos se reproducen asexualmente mediante fisión binaria: la célula duplica su ADN y se divide en dos células hijas idénticas. Este proceso puede ocurrir cada 20-30 minutos en condiciones óptimas, permitiendo un crecimiento exponencial que puede generar millones de bacterias en pocas horas.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll delay-3">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Metabolismo</h3>
+                        <p class="feature-text">Los cocos pueden ser aerobios (necesitan oxígeno), anaerobios (crecen sin oxígeno) o anaerobios facultativos (se adaptan a ambas condiciones). Su metabolismo puede ser fermentativo o respiratorio, permitiéndoles obtener energía de diversas fuentes de carbono como glucosa y otros azúcares.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll delay-4">
+                        <div class="feature-icon">🛡️</div>
+                        <h3 class="feature-title">Adaptación al Medio</h3>
+                        <p class="feature-text">Los cocos han desarrollado múltiples mecanismos de adaptación: producción de biofilms (biopelículas) que los protegen, formación de cápsulas para evadir el sistema inmune, producción de enzimas como la coagulasa y hemolisinas, y capacidad para sobrevivir en condiciones extremas de pH y temperatura.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll delay-5">
+                        <div class="feature-icon">💊</div>
+                        <h3 class="feature-title">Resistencia Bacteriana</h3>
+                        <p class="feature-text">Uno de los mayores desafíos actuales es la resistencia a los antibióticos. Bacterias como el MRSA (Staphylococcus aureus resistente a meticilina) y los enterococos resistentes a vancomicina representan graves amenazas para la salud pública. Esta resistencia se adquiere por mutaciones o transferencia horizontal de genes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ENFERMEDADES ========== -->
+    <section class="section section-alt" id="enfermedades">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">🏥 Salud</span>
+                <h2 class="section-title">Enfermedades Relacionadas</h2>
+                <p class="section-description">Los cocos patógenos pueden causar una amplia variedad de enfermedades, desde infecciones leves hasta condiciones potencialmente mortales. Conocer estas enfermedades es fundamental para su prevención y tratamiento oportuno.</p>
+            </div>
+            <div class="disease-grid">
+                <!-- Neumonía -->
+                <div class="disease-card animate-on-scroll" style="--disease-color: #00b4d8;">
+                    <div class="disease-header">
+                        <span class="disease-icon">🫁</span>
+                        <h3 class="disease-name">Neumonía</h3>
+                    </div>
+                    <div class="disease-tags">
+                        <span class="disease-tag">Respiratoria</span>
+                        <span class="disease-tag">Común</span>
+                    </div>
+                    <div class="disease-summary">
+                        <p>Infección aguda del parénquima pulmonar que provoca inflamación y acumulación de líquido en los alvéolos, dificultando el intercambio gaseoso.</p>
+                    </div>
+                    <button class="disease-toggle">Ver más ▼</button>
+                    <div class="disease-details">
+                        <div class="detail-item">
+                            <h4>🦠 Agente Causante</h4>
+                            <p><strong>Streptococcus pneumoniae</strong> (neumococo), responsable del 30-50% de los casos de neumonía adquirida en la comunidad.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🤒 Síntomas</h4>
+                            <p>Fiebre alta, tos productiva con esputo herrumbroso, dolor torácico pleurítico, dificultad respiratoria, escalofríos, fatiga y malestar general.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🔬 Diagnóstico</h4>
+                            <p>Radiografía de tórax, cultivo de esputo, hemocultivo, tinción de Gram, prueba de antígeno urinario para neumococo y análisis de sangre.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>💊 Tratamiento</h4>
+                            <p>Antibióticos como amoxicilina, penicilina, macrólidos (azitromicina) o cefalosporinas. Casos graves requieren hospitalización y antibióticos intravenosos.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🛡️ Prevención</h4>
+                            <p>Vacunación antineumocócica (PCV13 y PPSV23), lavado de manos, evitar el tabaquismo y mantener un sistema inmunitario saludable.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Meningitis -->
+                <div class="disease-card animate-on-scroll delay-1" style="--disease-color: #ff6b6b;">
+                    <div class="disease-header">
+                        <span class="disease-icon">🧠</span>
+                        <h3 class="disease-name">Meningitis</h3>
+                    </div>
+                    <div class="disease-tags">
+                        <span class="disease-tag">Neurológica</span>
+                        <span class="disease-tag">Grave</span>
+                    </div>
+                    <div class="disease-summary">
+                        <p>Inflamación de las membranas (meninges) que recubren el cerebro y la médula espinal. Puede ser potencialmente mortal y requiere atención médica inmediata.</p>
+                    </div>
+                    <button class="disease-toggle">Ver más ▼</button>
+                    <div class="disease-details">
+                        <div class="detail-item">
+                            <h4>🦠 Agente Causante</h4>
+                            <p><strong>Neisseria meningitidis</strong> (meningococo) y <strong>Streptococcus pneumoniae</strong>. Son las causas más frecuentes de meningitis bacteriana.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🤒 Síntomas</h4>
+                            <p>Fiebre alta y repentina, rigidez de nuca, cefalea intensa, náuseas, vómitos, fotofobia, confusión mental y, en casos graves, petequias (manchas rojas en la piel).</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🔬 Diagnóstico</h4>
+                            <p>Punción lumbar (análisis de líquido cefalorraquídeo), hemocultivo, tomografía computarizada, tinción de Gram del LCR y pruebas de aglutinación.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>💊 Tratamiento</h4>
+                            <p>Antibióticos intravenosos de urgencia: cefalosporinas de tercera generación (ceftriaxona), penicilina G. Corticosteroides para reducir la inflamación.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🛡️ Prevención</h4>
+                            <p>Vacunación antimeningocócica, quimioprofilaxis con rifampicina para contactos cercanos, buena higiene respiratoria y evitar hacinamiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Faringitis -->
+                <div class="disease-card animate-on-scroll delay-2" style="--disease-color: #ffd93d;">
+                    <div class="disease-header">
+                        <span class="disease-icon">🗣️</span>
+                        <h3 class="disease-name">Faringitis Estreptocócica</h3>
+                    </div>
+                    <div class="disease-tags">
+                        <span class="disease-tag">Respiratoria</span>
+                        <span class="disease-tag">Frecuente</span>
+                    </div>
+                    <div class="disease-summary">
+                        <p>Infección bacteriana de la faringe y las amígdalas que causa dolor de garganta intenso. Es especialmente común en niños en edad escolar.</p>
+                    </div>
+                    <button class="disease-toggle">Ver más ▼</button>
+                    <div class="disease-details">
+                        <div class="detail-item">
+                            <h4>🦠 Agente Causante</h4>
+                            <p><strong>Streptococcus pyogenes</strong> (estreptococo del grupo A), una de las bacterias más comunes en infecciones pediátricas.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🤒 Síntomas</h4>
+                            <p>Dolor de garganta intenso y repentino, fiebre superior a 38°C, amígdalas inflamadas con exudado blanquecino, ganglios linfáticos cervicales inflamados, cefalea y dolor abdominal en niños.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🔬 Diagnóstico</h4>
+                            <p>Prueba rápida de detección de antígeno estreptocócico (RADT), cultivo faríngeo, criterios de Centor y análisis serológicos (ASLO).</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>💊 Tratamiento</h4>
+                            <p>Penicilina V oral durante 10 días o amoxicilina. Alternativas: cefalosporinas o macrólidos (en alérgicos a penicilina). Analgésicos para el dolor.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🛡️ Prevención</h4>
+                            <p>Lavado frecuente de manos, evitar compartir utensilios, cubrirse al toser o estornudar, desinfección de superficies y no asistir a clases durante la fase contagiosa.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Infecciones Cutáneas -->
+                <div class="disease-card animate-on-scroll delay-3" style="--disease-color: #00e676;">
+                    <div class="disease-header">
+                        <span class="disease-icon">🩹</span>
+                        <h3 class="disease-name">Infecciones Cutáneas</h3>
+                    </div>
+                    <div class="disease-tags">
+                        <span class="disease-tag">Dermatológica</span>
+                        <span class="disease-tag">Variable</span>
+                    </div>
+                    <div class="disease-summary">
+                        <p>Grupo de infecciones que afectan la piel y tejidos blandos, desde lesiones superficiales leves hasta infecciones profundas graves como la celulitis y la fascitis necrotizante.</p>
+                    </div>
+                    <button class="disease-toggle">Ver más ▼</button>
+                    <div class="disease-details">
+                        <div class="detail-item">
+                            <h4>🦠 Agente Causante</h4>
+                            <p><strong>Staphylococcus aureus</strong> (incluyendo MRSA) y <strong>Streptococcus pyogenes</strong>. Responsables de impétigo, forúnculos, celulitis y abscesos.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🤒 Síntomas</h4>
+                            <p>Enrojecimiento, hinchazón, dolor y calor localizado. Pueden aparecer pústulas, abscesos con pus, costras amarillentas (impétigo) o áreas de piel endurecida y dolorosa.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🔬 Diagnóstico</h4>
+                            <p>Examen clínico, cultivo de la herida o del material purulento, tinción de Gram y pruebas de sensibilidad a antibióticos.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>💊 Tratamiento</h4>
+                            <p>Antibióticos tópicos (mupirocina) para lesiones leves. Antibióticos orales (cefalexina, clindamicina) o intravenosos para casos graves. Drenaje quirúrgico de abscesos.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🛡️ Prevención</h4>
+                            <p>Mantener heridas limpias y cubiertas, higiene personal adecuada, no compartir objetos personales, desinfección de superficies y lavado de manos frecuente.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sepsis -->
+                <div class="disease-card animate-on-scroll delay-4" style="--disease-color: #e040fb;">
+                    <div class="disease-header">
+                        <span class="disease-icon">🩸</span>
+                        <h3 class="disease-name">Sepsis</h3>
+                    </div>
+                    <div class="disease-tags">
+                        <span class="disease-tag">Sistémica</span>
+                        <span class="disease-tag">Crítica</span>
+                    </div>
+                    <div class="disease-summary">
+                        <p>Respuesta inflamatoria sistémica descontrolada ante una infección que puede provocar disfunción orgánica múltiple y poner en peligro la vida del paciente.</p>
+                    </div>
+                    <button class="disease-toggle">Ver más ▼</button>
+                    <div class="disease-details">
+                        <div class="detail-item">
+                            <h4>🦠 Agente Causante</h4>
+                            <p><strong>Staphylococcus aureus</strong>, <strong>Streptococcus pneumoniae</strong> y <strong>Enterococcus</strong> spp. son causas frecuentes de sepsis bacteriana por cocos.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🤒 Síntomas</h4>
+                            <p>Fiebre o hipotermia, taquicardia, taquipnea, hipotensión arterial, confusión mental, disminución de la diuresis, piel moteada y extremidades frías.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🔬 Diagnóstico</h4>
+                            <p>Hemocultivos, procalcitonina sérica, lactato sérico, hemograma completo, pruebas de función orgánica y criterios SOFA/qSOFA.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>💊 Tratamiento</h4>
+                            <p>Antibióticos intravenosos de amplio espectro inmediatos, reposición de líquidos, vasopresores si hay hipotensión y soporte de órganos en UCI.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🛡️ Prevención</h4>
+                            <p>Tratamiento oportuno de infecciones, vacunación, higiene hospitalaria estricta, cuidado adecuado de catéteres y heridas quirúrgicas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Otitis -->
+                <div class="disease-card animate-on-scroll delay-5" style="--disease-color: #ff9800;">
+                    <div class="disease-header">
+                        <span class="disease-icon">👂</span>
+                        <h3 class="disease-name">Otitis Media</h3>
+                    </div>
+                    <div class="disease-tags">
+                        <span class="disease-tag">Otorrinolaringología</span>
+                        <span class="disease-tag">Pediátrica</span>
+                    </div>
+                    <div class="disease-summary">
+                        <p>Infección del oído medio muy frecuente en niños menores de 5 años. Causa dolor intenso y puede llevar a complicaciones si no se trata adecuadamente.</p>
+                    </div>
+                    <button class="disease-toggle">Ver más ▼</button>
+                    <div class="disease-details">
+                        <div class="detail-item">
+                            <h4>🦠 Agente Causante</h4>
+                            <p><strong>Streptococcus pneumoniae</strong> (causa más frecuente), <strong>Staphylococcus aureus</strong> y <strong>Moraxella catarrhalis</strong>.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🤒 Síntomas</h4>
+                            <p>Otalgia (dolor de oído) intensa, fiebre, irritabilidad en lactantes, otorrea (secreción del oído), disminución de la audición y pérdida de apetito.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🔬 Diagnóstico</h4>
+                            <p>Otoscopia (visualización del tímpano), timpanometría, audiometría en casos recurrentes y cultivo de la secreción ótica cuando hay perforación timpánica.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>💊 Tratamiento</h4>
+                            <p>Amoxicilina como primera línea durante 7-10 días. Alternativas: amoxicilina-ácido clavulánico, cefalosporinas. Analgésicos y antiinflamatorios para el dolor.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>🛡️ Prevención</h4>
+                            <p>Lactancia materna, vacunación antineumocócica e influenza, evitar exposición al humo de tabaco, higiene nasal y tratamiento adecuado de infecciones respiratorias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PREVENCIÓN ========== -->
+    <section class="section" id="prevencion">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">✅ Cuidados</span>
+                <h2 class="section-title">Prevención de Infecciones</h2>
+                <p class="section-description">La prevención es la herramienta más poderosa contra las infecciones bacterianas. Adoptar hábitos saludables puede reducir significativamente el riesgo de contagio.</p>
+            </div>
+            <div class="prevention-grid">
+                <div class="prevention-card animate-on-scroll">
+                    <span class="prevention-number">01</span>
+                    <div class="prevention-icon">🧼</div>
+                    <h3 class="prevention-title">Lavado de Manos</h3>
+                    <p class="prevention-text">Lava tus manos frecuentemente con agua y jabón durante al menos 20 segundos, especialmente antes de comer, después de usar el baño y al llegar a casa. El lavado de manos elimina hasta el 99% de las bacterias y es la medida preventiva más efectiva y accesible.</p>
+                </div>
+                <div class="prevention-card animate-on-scroll delay-1">
+                    <span class="prevention-number">02</span>
+                    <div class="prevention-icon">🚿</div>
+                    <h3 class="prevention-title">Higiene Personal</h3>
+                    <p class="prevention-text">Mantén una rutina diaria de higiene que incluya ducha regular, cuidado bucal (cepillado y uso de hilo dental), cambio de ropa y cuidado de heridas. La higiene personal reduce la colonización bacteriana en la piel y mucosas.</p>
+                </div>
+                <div class="prevention-card animate-on-scroll delay-2">
+                    <span class="prevention-number">03</span>
+                    <div class="prevention-icon">💉</div>
+                    <h3 class="prevention-title">Vacunación</h3>
+                    <p class="prevention-text">Mantén al día tu esquema de vacunación. Las vacunas contra neumococo, meningococo e influenza son esenciales para prevenir infecciones graves. Consulta con tu médico sobre las vacunas recomendadas según tu edad y condición de salud.</p>
+                </div>
+                <div class="prevention-card animate-on-scroll delay-3">
+                    <span class="prevention-number">04</span>
+                    <div class="prevention-icon">💊</div>
+                    <h3 class="prevention-title">Uso Adecuado de Antibióticos</h3>
+                    <p class="prevention-text">Nunca te automediques con antibióticos. Úsalos solo cuando sean recetados por un médico y completa siempre el tratamiento indicado. El uso inadecuado contribuye a la resistencia bacteriana, uno de los mayores problemas de salud pública actual.</p>
+                </div>
+                <div class="prevention-card animate-on-scroll delay-4">
+                    <span class="prevention-number">05</span>
+                    <div class="prevention-icon">🧹</div>
+                    <h3 class="prevention-title">Limpieza de Superficies</h3>
+                    <p class="prevention-text">Desinfecta regularmente las superficies de alto contacto: pomos de puertas, interruptores, mesas, teléfonos y teclados. Utiliza productos desinfectantes apropiados y permite el tiempo de contacto necesario para eliminar las bacterias eficazmente.</p>
+                </div>
+                <div class="prevention-card animate-on-scroll delay-5">
+                    <span class="prevention-number">06</span>
+                    <div class="prevention-icon">👨‍⚕️</div>
+                    <h3 class="prevention-title">Consultas Médicas Oportunas</h3>
+                    <p class="prevention-text">Acude al médico ante los primeros síntomas de infección. El diagnóstico y tratamiento temprano previenen complicaciones graves y reducen la propagación de las bacterias a otras personas. No ignores señales como fiebre persistente o dolor intenso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALERÍA ========== -->
+    <section class="section section-alt" id="galeria">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">📸 Imágenes</span>
+                <h2 class="section-title">Galería Científica</h2>
+                <p class="section-description">Explora imágenes microscópicas, fotografías de laboratorio y diagramas científicos que ilustran el fascinante mundo de las bacterias cocos. Haz clic en cualquier imagen para ampliarla.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll" data-title="Cocos bacterianos — Diversas agrupaciones">
+                    <img src="img/hero_bacteria.png" alt="Ilustración de diversas agrupaciones de bacterias cocos" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Agrupaciones de Cocos</span>
+                        <span class="gallery-subtitle">Ilustración científica</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-1" data-title="Estructura celular de un coco">
+                    <img src="img/cell_structure.png" alt="Estructura interna de una bacteria coco" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Estructura Celular</span>
+                        <span class="gallery-subtitle">Anatomía bacteriana</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-3" data-title="Staphylococcus aureus en microscopio">
+                    <img src="img/gallery_staphylococcus.png" alt="Vista microscópica de Staphylococcus aureus en racimos" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Staphylococcus</span>
+                        <span class="gallery-subtitle">Microscopía electrónica</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-4" data-title="Streptococcus en cadena">
+                    <img src="img/gallery_streptococcus.png" alt="Vista microscópica de Streptococcus formando cadenas" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Streptococcus</span>
+                        <span class="gallery-subtitle">Formación en cadena</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-5" data-title="Diplococos vistos al microscopio">
+                    <img src="img/gallery_diplococci.png" alt="Vista microscópica de diplococos en pares" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Diplococos</span>
+                        <span class="gallery-subtitle">Agrupación en pares</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">&times;</button>
+        <img src="" alt="Imagen ampliada" class="lightbox-img" id="lightboxImg">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <!-- ========== CURIOSIDADES ========== -->
+    <section class="section" id="curiosidades">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">✨ Datos</span>
+                <h2 class="section-title">Curiosidades Fascinantes</h2>
+                <p class="section-description">El mundo microscópico de los cocos está lleno de datos sorprendentes. Descubre algunos hechos fascinantes que quizás no conocías sobre estas bacterias esféricas.</p>
+            </div>
+            <div class="curiosity-grid">
+                <div class="curiosity-card animate-on-scroll">
+                    <span class="curiosity-number">01</span>
+                    <div class="curiosity-icon">🧫</div>
+                    <h3 class="curiosity-title">Bacterias Beneficiosas</h3>
+                    <p class="curiosity-text">No todos los cocos son dañinos. Especies como <em>Streptococcus thermophilus</em> y <em>Lactococcus lactis</em> son esenciales en la industria alimentaria. Se utilizan para producir yogur, queso, mantequilla y otros productos lácteos fermentados que consumimos a diario.</p>
+                </div>
+                <div class="curiosity-card animate-on-scroll delay-1">
+                    <span class="curiosity-number">02</span>
+                    <div class="curiosity-icon">🤝</div>
+                    <h3 class="curiosity-title">Microbiota Humana</h3>
+                    <p class="curiosity-text">Los cocos forman parte integral de la microbiota humana normal. Se estima que nuestro cuerpo alberga aproximadamente 38 billones de bacterias, muchas de las cuales son cocos que habitan en la piel, la boca, el intestino y las vías respiratorias, contribuyendo a nuestra salud.</p>
+                </div>
+                <div class="curiosity-card animate-on-scroll delay-2">
+                    <span class="curiosity-number">03</span>
+                    <div class="curiosity-icon">🛡️</div>
+                    <h3 class="curiosity-title">Superbacterias</h3>
+                    <p class="curiosity-text">El MRSA (Staphylococcus aureus resistente a meticilina) es una de las "superbacterias" más temidas. Ha desarrollado resistencia a múltiples antibióticos, lo que dificulta enormemente su tratamiento. La OMS lo clasifica como una amenaza prioritaria para la salud global.</p>
+                </div>
+                <div class="curiosity-card animate-on-scroll delay-3">
+                    <span class="curiosity-number">04</span>
+                    <div class="curiosity-icon">📜</div>
+                    <h3 class="curiosity-title">Más de 300 Años de Estudio</h3>
+                    <p class="curiosity-text">Antonie van Leeuwenhoek observó bacterias por primera vez en 1676 usando microscopios artesanales. Desde entonces, los cocos han sido objeto de estudio continuo. Louis Pasteur y Robert Koch sentaron las bases de la bacteriología moderna en el siglo XIX.</p>
+                </div>
+                <div class="curiosity-card animate-on-scroll delay-4">
+                    <span class="curiosity-number">05</span>
+                    <div class="curiosity-icon">⚡</div>
+                    <h3 class="curiosity-title">Reproducción Ultrarrápida</h3>
+                    <p class="curiosity-text">Bajo condiciones ideales, una sola bacteria coco puede dividirse cada 20 minutos. Esto significa que en solo 24 horas, una bacteria podría generar teóricamente más de 4.7 sextillones (4.7 × 10²¹) de descendientes, aunque los recursos y el espacio limitan este crecimiento.</p>
+                </div>
+                <div class="curiosity-card animate-on-scroll delay-5">
+                    <span class="curiosity-number">06</span>
+                    <div class="curiosity-icon">🎨</div>
+                    <h3 class="curiosity-title">Bacterias de Colores</h3>
+                    <p class="curiosity-text">Algunos cocos producen pigmentos naturales. <em>Staphylococcus aureus</em> produce un pigmento dorado (de ahí su nombre "aureus"), <em>Micrococcus luteus</em> genera un pigmento amarillo y <em>Sarcina aurantiaca</em> tiene un color anaranjado brillante que los hace visualmente llamativos.</p>
+                </div>
+                <div class="curiosity-card animate-on-scroll delay-6">
+                    <span class="curiosity-number">07</span>
+                    <div class="curiosity-icon">🌊</div>
+                    <h3 class="curiosity-title">Sobreviven en Condiciones Extremas</h3>
+                    <p class="curiosity-text">Ciertos cocos pueden sobrevivir en ambientes extremos: alta salinidad, temperaturas elevadas, pH ácido o alcalino, e incluso exposición a radiación ultravioleta. El <em>Deinococcus radiodurans</em> puede resistir niveles de radiación 1,000 veces superiores a los letales para humanos.</p>
+                </div>
+                <div class="curiosity-card animate-on-scroll delay-7">
+                    <span class="curiosity-number">08</span>
+                    <div class="curiosity-icon">🏗️</div>
+                    <h3 class="curiosity-title">Biofilms Inteligentes</h3>
+                    <p class="curiosity-text">Los cocos pueden formar biofilms (biopelículas): comunidades bacterianas adheridas a superficies y protegidas por una matriz. Estos biofilms son hasta 1,000 veces más resistentes a los antibióticos que las bacterias individuales y son responsables del 80% de las infecciones crónicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LÍNEA DE TIEMPO ========== -->
+    <section class="section section-alt" id="linea-de-tiempo">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">📅 Historia</span>
+                <h2 class="section-title">Línea de Tiempo</h2>
+                <p class="section-description">Un recorrido por los momentos más importantes en el descubrimiento y estudio de las bacterias cocos a lo largo de la historia.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1676</span>
+                        <h3>Primeras Observaciones</h3>
+                        <p>Antonie van Leeuwenhoek, comerciante y científico holandés, observa por primera vez microorganismos ("animálculos") usando microscopios de fabricación propia con lentes de hasta 270x de aumento.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right animate-on-scroll delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1838</span>
+                        <h3>Término "Bacteria"</h3>
+                        <p>Christian Gottfried Ehrenberg acuña el término "bacteria" del griego βακτήριον (bastoncillo). Se establece la clasificación morfológica básica que incluye a los cocos como una de las formas fundamentales.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left animate-on-scroll delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1874</span>
+                        <h3>Descubrimiento de los Estafilococos</h3>
+                        <p>Theodor Billroth describe por primera vez los estafilococos en heridas quirúrgicas infectadas. En 1880, Alexander Ogston acuña el nombre "Staphylococcus" por su disposición en racimos semejantes a uvas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right animate-on-scroll delay-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1884</span>
+                        <h3>Tinción de Gram</h3>
+                        <p>Hans Christian Gram desarrolla la técnica de tinción que lleva su nombre, permitiendo clasificar las bacterias en Gram positivas y Gram negativas. Este método revolucionó la microbiología y sigue siendo fundamental en el diagnóstico clínico.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left animate-on-scroll delay-4">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1928</span>
+                        <h3>Descubrimiento de la Penicilina</h3>
+                        <p>Alexander Fleming descubre accidentalmente la penicilina al observar que el moho Penicillium notatum inhibía el crecimiento de Staphylococcus aureus. Este hallazgo marca el inicio de la era de los antibióticos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right animate-on-scroll delay-5">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1961</span>
+                        <h3>Aparición del MRSA</h3>
+                        <p>Se reportan los primeros casos de Staphylococcus aureus resistente a meticilina (MRSA) en el Reino Unido, apenas un año después de la introducción de la meticilina. Comienza la era de la resistencia antibiótica.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left animate-on-scroll delay-6">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2000</span>
+                        <h3>Genómica Bacteriana</h3>
+                        <p>Se secuencia el genoma completo de Staphylococcus aureus, abriendo nuevas posibilidades para comprender la virulencia y resistencia bacteriana. La genómica revoluciona el estudio de los cocos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right animate-on-scroll delay-7">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020s</span>
+                        <h3>Investigación Moderna</h3>
+                        <p>Actualmente se investigan nuevos antibióticos, terapia con bacteriófagos, vacunas de nueva generación e inmunoterapias para combatir las infecciones por cocos resistentes. La inteligencia artificial acelera el descubrimiento de fármacos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PREGUNTAS FRECUENTES ========== -->
+    <section class="section" id="preguntas-frecuentes">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">❓ FAQ</span>
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-description">Respuestas a las preguntas más comunes sobre las bacterias cocos.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>¿Qué diferencia a los cocos de otros tipos de bacterias?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La principal diferencia radica en su forma. Los cocos tienen forma esférica, mientras que los bacilos tienen forma de bastón y los espirilos tienen forma espiral o helicoidal. Esta diferencia morfológica es una de las primeras características que se observan al identificar bacterias bajo el microscopio y tiene implicaciones en sus propiedades biológicas, como la relación superficie-volumen y la resistencia a la desecación.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll delay-1">
+                    <button class="faq-question">
+                        <span>¿Todos los cocos son peligrosos para la salud?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, en absoluto. La mayoría de los cocos son inofensivos o incluso beneficiosos. Muchas especies forman parte de nuestra microbiota normal y nos protegen contra patógenos. Otros se utilizan en la industria alimentaria para producir yogur, queso y otros alimentos fermentados. Solo un pequeño porcentaje de las especies de cocos son patógenas y pueden causar enfermedades.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll delay-2">
+                    <button class="faq-question">
+                        <span>¿Cómo se diagnostican las infecciones por cocos?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El diagnóstico incluye varias técnicas: la tinción de Gram para observar la morfología y agrupación, cultivos bacterianos en medios específicos, pruebas bioquímicas (catalasa, coagulasa, optoquina), pruebas serológicas, antibiogramas para determinar sensibilidad a antibióticos y, cada vez más, técnicas moleculares como PCR y secuenciación genómica.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll delay-3">
+                    <button class="faq-question">
+                        <span>¿Qué es la resistencia a los antibióticos y por qué es preocupante?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La resistencia a los antibióticos ocurre cuando las bacterias desarrollan mecanismos para sobrevivir a los medicamentos diseñados para eliminarlas. Es preocupante porque reduce las opciones de tratamiento disponibles, aumenta la mortalidad, prolonga las hospitalizaciones y eleva los costos de salud. La OMS la considera una de las mayores amenazas para la salud pública mundial del siglo XXI.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll delay-4">
+                    <button class="faq-question">
+                        <span>¿Cuál es la diferencia entre Gram positivo y Gram negativo?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La diferencia principal está en la estructura de la pared celular. Las bacterias Gram positivas tienen una pared gruesa de peptidoglucano que retiene el colorante cristal violeta (se ven moradas). Las Gram negativas tienen una pared delgada con una membrana externa adicional y no retienen el cristal violeta, tiñéndose de rosa con la safranina. Esta diferencia afecta la elección del tratamiento antibiótico.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll delay-5">
+                    <button class="faq-question">
+                        <span>¿Pueden los cocos sobrevivir fuera del cuerpo humano?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, muchos cocos pueden sobrevivir en superficies y ambientes fuera del cuerpo durante períodos variables. El Staphylococcus aureus puede sobrevivir en superficies secas durante semanas o incluso meses. Esto destaca la importancia de la limpieza y desinfección de superficies como medida preventiva contra infecciones.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll delay-6">
+                    <button class="faq-question">
+                        <span>¿Qué papel juegan los cocos en la industria alimentaria?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Los cocos tienen un papel fundamental en la producción de alimentos fermentados. Streptococcus thermophilus se utiliza en la elaboración de yogur, Lactococcus lactis en la producción de queso y mantequilla, y Pediococcus en la fermentación de embutidos y encurtidos. Estas bacterias aportan sabor, textura y propiedades de conservación a los alimentos.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll delay-7">
+                    <button class="faq-question">
+                        <span>¿Cómo se transmiten las infecciones por cocos?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Las vías de transmisión varían según la especie: por contacto directo con personas infectadas, por gotículas respiratorias (al toser o estornudar), por contacto con superficies contaminadas (fómites), a través de heridas en la piel, por vía fecal-oral en algunos casos, y por transmisión vertical de madre a hijo durante el parto.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll delay-8">
+                    <button class="faq-question">
+                        <span>¿Existen vacunas contra las infecciones por cocos?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, existen vacunas efectivas contra varios cocos patógenos. La vacuna antineumocócica (PCV13 y PPSV23) protege contra Streptococcus pneumoniae. Las vacunas antimeningocócicas (MenACWY y MenB) protegen contra Neisseria meningitidis. Se continúa investigando vacunas contra Staphylococcus aureus y Streptococcus del grupo B.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll delay-9">
+                    <button class="faq-question">
+                        <span>¿Qué es MRSA y por qué es tan peligroso?</span>
+                        <span class="faq-chevron">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>MRSA (Staphylococcus aureus resistente a meticilina) es una cepa que ha desarrollado resistencia a múltiples antibióticos betalactámicos. Es peligroso porque las opciones de tratamiento son limitadas y costosas, puede causar infecciones graves (sepsis, endocarditis, neumonía), se propaga fácilmente en hospitales y comunidades, y tiene tasas de mortalidad más elevadas que las cepas sensibles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BIBLIOGRAFÍA ========== -->
+    <section class="section section-alt" id="bibliografia">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">📚 Fuentes</span>
+                <h2 class="section-title">Bibliografía y Referencias</h2>
+                <p class="section-description">Fuentes científicas y académicas consultadas para la elaboración de este contenido educativo.</p>
+            </div>
+            <div class="reference-list">
+                <div class="reference-item animate-on-scroll">
+                    <span class="reference-number">1</span>
+                    <div class="reference-content">
+                        <h4 class="reference-title">Microbiología Médica de Jawetz, Melnick y Adelberg</h4>
+                        <p class="reference-author">Brooks, G. F., Carroll, K. C., Butel, J. S., Morse, S. A., & Mietzner, T. A.</p>
+                        <p class="reference-details">McGraw-Hill Education, 28ª edición, 2019. Manual de referencia en microbiología médica.</p>
+                    </div>
+                </div>
+                <div class="reference-item animate-on-scroll delay-1">
+                    <span class="reference-number">2</span>
+                    <div class="reference-content">
+                        <h4 class="reference-title">Microbiología de Prescott</h4>
+                        <p class="reference-author">Willey, J. M., Sherwood, L. M., & Woolverton, C. J.</p>
+                        <p class="reference-details">McGraw-Hill, 11ª edición, 2020. Texto fundamental de microbiología general.</p>
+                    </div>
+                </div>
+                <div class="reference-item animate-on-scroll delay-2">
+                    <span class="reference-number">3</span>
+                    <div class="reference-content">
+                        <h4 class="reference-title">Principios de Enfermedades Infecciosas de Mandell, Douglas y Bennett</h4>
+                        <p class="reference-author">Bennett, J. E., Dolin, R., & Blaser, M. J.</p>
+                        <p class="reference-details">Elsevier, 9ª edición, 2020. Referencia clásica en enfermedades infecciosas.</p>
+                    </div>
+                </div>
+                <div class="reference-item animate-on-scroll delay-3">
+                    <span class="reference-number">4</span>
+                    <div class="reference-content">
+                        <h4 class="reference-title">Microbiología Médica de Murray</h4>
+                        <p class="reference-author">Murray, P. R., Rosenthal, K. S., & Pfaller, M. A.</p>
+                        <p class="reference-details">Elsevier, 9ª edición, 2021. Texto esencial para el estudio de patógenos microbianos.</p>
+                    </div>
+                </div>
+                <div class="reference-item animate-on-scroll delay-4">
+                    <span class="reference-number">5</span>
+                    <div class="reference-content">
+                        <h4 class="reference-title">Antimicrobial Resistance: Global Report on Surveillance</h4>
+                        <p class="reference-author">Organización Mundial de la Salud (OMS / WHO)</p>
+                        <p class="reference-details">WHO Press, 2014–2024. Informes sobre resistencia antimicrobiana a nivel global.</p>
+                    </div>
+                </div>
+                <div class="reference-item animate-on-scroll delay-5">
+                    <span class="reference-number">6</span>
+                    <div class="reference-content">
+                        <h4 class="reference-title">Bergey's Manual of Systematic Bacteriology</h4>
+                        <p class="reference-author">Whitman, W. B. et al. (Eds.)</p>
+                        <p class="reference-details">Springer, 2ª edición, 2009–2012. Referencia taxonómica definitiva para la clasificación bacteriana.</p>
+                    </div>
+                </div>
+                <div class="reference-item animate-on-scroll delay-6">
+                    <span class="reference-number">7</span>
+                    <div class="reference-content">
+                        <h4 class="reference-title">The Prokaryotes: A Handbook on the Biology of Bacteria</h4>
+                        <p class="reference-author">Dworkin, M., Falkow, S., Rosenberg, E., Schleifer, K.H., & Stackebrandt, E.</p>
+                        <p class="reference-details">Springer, 3ª edición, 2006. Compendio enciclopédico sobre biología bacteriana.</p>
+                    </div>
+                </div>
+                <div class="reference-item animate-on-scroll delay-7">
+                    <span class="reference-number">8</span>
+                    <div class="reference-content">
+                        <h4 class="reference-title">Molecular Biology of the Cell</h4>
+                        <p class="reference-author">Alberts, B., Johnson, A., Lewis, J., Raff, M., Roberts, K., & Walter, P.</p>
+                        <p class="reference-details">Garland Science, 7ª edición, 2022. Texto de biología celular y molecular con secciones sobre procariotas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#inicio" class="footer-logo">
+                        <span class="nav-logo-icon">🦠</span>
+                        <span>Grupo Cocos</span>
+                    </a>
+                    <p class="footer-description">Proyecto educativo dedicado a la divulgación científica sobre bacterias cocos.</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>Integrantes:</strong>
+                        <ul style="opacity: 0.8; margin-top: 0.5rem;">
+                            <li>Franco Escalante</li>
+                            <li>Santiago Gonzalez</li>
+                            <li>Mateo Zamudio</li>
+                            <li>Benja Calabro</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#que-son">¿Qué son?</a></li>
+                        <li><a href="#caracteristicas">Características</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Explorar</h4>
+                    <ul>
+                        <li><a href="#enfermedades">Enfermedades</a></li>
+                        <li><a href="#prevencion">Prevención</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#curiosidades">Curiosidades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#linea-de-tiempo">Línea de Tiempo</a></li>
+                        <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
+                        <li><a href="#bibliografia">Bibliografía</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grupo Cocos — Proyecto Educativo de Microbiología. Todos los derechos reservados.</p>
+                <p class="footer-note">Contenido con fines educativos. No sustituye la consulta médica profesional.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
